@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head
+    <title></title>
+    <style type="text/css">
+        *{padding: 0; margin: 0; box-sizing: border-box;}
+        header{
+            width: 100%;
+            height: 100vh;
+            background: url('img/4k12.jpg') no-repeat center fixed;
+            background-size: cover;
+        }
+       nav{
+        width: 100%;
+        font-weight: bold;
+        height: 100px;
+        color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;  
+        font-family: sans-serif;
+    }
+       .logo{
+        font-size: 2em;
+        letter-spacing: 0px;
+       }
+       .menu a{
+        text-decoration: none;
+        font-size: 1.5em;
+        color: rgb(255, 255, 255);
+        padding: 10px 20px;
+        position: relative;
+       }
+       .menu a:before{
+         content: '';
+         position: absolute;
+         top:0;
+         left: 0;
+         width:0%;
+         height: 100%;
+         border-bottom: 2px solid greenyellow;
+         transition: 0.4s linear;
+       }
+       .menu a:hover:before{
+        width: 90%;
+       }
+       .resister a{
+        text-decoration: rgb(167, 0, 108);
+        color: rgb(255, 255, 255);
+        background-color:  rgb(167, 0, 108);
+    box-sizing: content-box;   
+    padding: 7px 20px;
+    font-size: 1.5em;
+    transition: 00.4s;
+    border-radius: 50px;
+    }
+    .resister a:hover{
+        background: transparent;
+        border: 1px solid rgb(167, 0, 108);
+       
+    }
+    .ht{
+        max-width: 650px;
+        position: absolute;
+        top: 50%;
+        left: 22%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+    .ht h1{
+        font-size: 3.5em;
+    }
+
+.c a{
+    
+        text-decoration: rgb(8, 25, 207)ua;
+        color: rgb(255, 255, 255);
+        background-color:rgb(8, 25, 207);
+    box-sizing: content-box;   
+    padding: 10px 20px;
+    font-size: 1.5em;
+    transition: 00.4s;
+    }
+    .c a:hover{
+        background: transparent;
+        border: 1px solid rgb(8, 25, 207);
+       
+    }
+    .d a{
+    
+    text-decoration:  rgb(167, 0, 108);
+    color: rgb(255, 255, 255);
+    background-color:  rgb(167, 0, 108);
+box-sizing: content-box;   
+padding: 10px 20px;
+font-size: 1.5em;
+transition: 00.4s;
+font-family: sans-serif;
+border-radius: 50px;
+font-weight: bold;
+}
+.d a:hover{
+    background: black;
+    border: 2px solid rgb(8, 25, 207);
+}
+.l{
+    width: 250px;
+    height: 400px;
+    background: linear-gradient(to top,light blue 50%, light blue 50%);
+position: absolute;
+top: -100px;
+left: 900px;
+border-radius: 10px;
+border: 1px solid greenyellow;
+padding: 25px;
+}
+.l h2{
+    width: 198px;
+    font-family: sans-serif;
+    text-align: center;
+    color:  rgb(167, 0, 108);
+    font-size: 22px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 2px;
+    padding: 8px;
+}
+.l input{
+    width: 200px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid greenyellow;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif; 
+     color: white;
+}
+.l input:focus{
+    outline: none;
+}
+::placeholder{
+    color: white;
+    font-family: Arial;
+}
+.l link{
+    font-family: Arial;
+    font-size: 7px;
+    padding-top: 20px;
+    text-align: center;
+}
+.s a{
+    text-decoration: none;
+    color: orange;
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+.google{
+    width: 60px;
+    height: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 16px;
+    background-color: white;
+    margin: 1px;
+    padding: 4px;
+    display: flex;
+}
+.g{
+    color: rgb(0, 86, 205);
+}
+.o{
+    color: rgb(167, 0, 108);
+}
+.o2{
+    color: yellow;
+}
+.z{
+    color: rgb(8, 239, 77);
+}
+
+ul{
+    display: flex;
+}
+.face{
+    background: url(img/44.png);
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    color: blue;
+    font-size: large;
+}
+.linkedin{
+    background-color: rgb(0, 24, 238);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    color: white;
+    font-size: large;
+}
+.github{
+    background-color: transparent;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+}
+
+
+    </style>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/39.png" alt="" width="120" height="80">
+            </div>
+            <div class="menu">
+                <a href="home.html">    <i class="fa-sharp fa-solid fa-house-chimney" style="top: -2px;" ></i>  </a> 
+                <a href="cont.html">CONTACT</a>
+                <a href="about.html"> <i class="fa-solid fa-users"></i>  ABOUT US</a>
+            </div>
+             <div class="resister">
+                <a href="log.html">LOG IN</a>
+            </div>
+        </nav>
+        <section class="ht">
+            <h2>WELCOME TO</h2>
+            <h1>IGNITED MINDS</h1>
+           <p>
+                                                                                        
+                    " The best brains of the nation may be found on the last benches of the classroon "          </p>
+            <br>
+         
+            <div class="l">
+                <h2>LOGIN HERE</h2>
+                <input type="email" name="email" placeholder="input email here">
+                <input type="password" name="password" placeholder="enter password">
+                <br>
+                <br>
+                <br>
+               <div class="d">
+                <a href="main.html">LOGIN</a>
+               </div>
+                <br>
+                <p class="link">don't have an account </p>
+                <div class="s">
+                    <a href="#">Sign up</a> here</a>
+                </div>
+                <p class="liw">login with</p><div class="fb"> </a><ul>
+                 <a href=""> <div class="google"> <ul><div class="g">G</div><div class="o">o</div><div class="o2">o</div><div class="g">g</div><div class="z">l</div><div class="o">e</div></ul></a>
+                 </div><div class="trans">&nbsp;&nbsp;</div> <a href=""> <div class="face">f</div></a><div class="trans">&nbsp;&nbsp;</div> <a href=""> <div class="linkedin">in</div> </a> <div class="trans">&nbsp;&nbsp;</div>  <div class="github"><a href="#"><img src="img/1669524887660.jpg" alt="github" width="24px" height="24px"  ></a></div></ul>
+                </div></div>
+        </section>
+    </header>
+</body>
+</html>
+
+
+

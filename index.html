@@ -1,0 +1,166 @@
+<html>
+<head
+    <title></title>
+    <style type="text/css">
+        *{padding: 0; margin: 0; box-sizing: border-box;}
+        header{
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+        }
+   
+       nav{
+        width: 100%;
+        height: 100px;
+        color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;  
+        font-family: sans-serif;
+    }
+       .logo{
+        font-size: 2em;
+        letter-spacing: 0px;
+       }
+       .menu a{
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 1.5em;
+        color: rgb(255, 255, 255);
+        padding: 10px 20px;
+        position: relative;
+       }
+       .menu a:before{
+         content: '';
+         position: absolute;
+         top:0;
+         left: 0;
+         width:0%;
+         height: 100%;
+         border-bottom: 2px solid greenyellow;
+         transition: 0.4s linear;
+       }
+       .menu a:hover:before{
+        width: 90%;
+       }
+       .resister a{
+        text-decoration: aqua;
+        color: rgb(255, 255, 255);
+        background-color: red;
+    box-sizing: content-box;   
+    padding: 7px 20px;
+    font-size: 1.5em;
+    transition: 00.4s;
+    border-radius: 50px;
+    font-weight: bold;
+    }
+    .resister a:hover{
+        background: transparent;
+        border: 1px solid red;
+    }
+    .ht{
+        position: absolute;
+        max-width: 600;
+          top: 50%;
+          font-style: initial;
+          left: 50%;
+          transform: translate(-50% , -50%);
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+    .ht span{
+        letter-spacing: 1px;
+        font-style: normal;
+    }
+    .ht h1{
+        font-size: 3.7em;
+        
+    }
+    .ht a{
+        text-decoration: none;
+        background-color: red;
+        color: rgb(243, 243, 243);
+        padding: 10px ;
+        border-radius: 50px;
+    }
+    .ht a:hover{
+        background: transparent;
+        border: 1px solid red;
+    }
+   .mark{
+    font-weight: bold;
+    font-style: italic;
+    font-family: sans-serif;
+    font-size: 20px;
+    color:  rgb(255, 255, 255);
+   }
+   .ign{
+    color: rgb(255, 255, 255);
+  transition: 0.5s;
+  font-size: 160px;
+  font-weight: 600;
+   }
+   .ign:hover{
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+   }
+   footer a{
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+   }
+   .backv{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    
+   }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <header>
+
+
+ 
+        <video autoplay muted loop id="myVideo" class="backv">
+            <source src="img/v1.mp4" type="video/mp4">
+          </video>
+        <nav>
+            <div class="logo">
+              <img src="img/39.png" alt="" width="120" height="80">
+            </div>
+          
+            <div class="menu">
+                <a href="home.html">    <i class="fa-sharp fa-solid fa-house-chimney" style="top: -2px;" ></i>  </a> 
+                <a href="cont.html">CONTACT</a>
+                <a href="about.html"> <i class="fa-solid fa-users"></i> ABOUT</a>
+            </div>
+             <div class="resister">
+                <a href="log.html">LOG IN</a>
+            </div>
+        </nav>
+        <marquee class="mark" scrollamount="40" bgcolor="black" direction="right" behavior="" ><h1>WELCOME TO</h1></marquee> 
+        <section class="ht">
+            <br>
+           
+            <h1 class="ign"> IGNITED MINDS</h1>
+            <br>
+            <a href="home.html">CLICK HERE</a>
+        </section>
+
+    </header>
+    <footer class="ff" style="   
+    overflow: hidden;
+background: black" >
+    <a href="#">FAQs</a>
+    <a href="#">Contact Us</a>
+    <a href="#">Terms of service</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">&copy; 2022 | IGNITED MINDS</a>
+  </footer>
+</body>
+</html>
